@@ -1,0 +1,27 @@
+<div class="botao">
+    <button pButton type="button" pTooltip="Incia a simulação com seus dados" tooltipPosition="bottom" label="Simular" class="ui-button-rounded ui-button-success" (click)="simular()"></button>
+</div>
+
+<div *ngIf="resultado">
+    <p-card>
+        <p-header>
+           <span class="nome">
+            {{resultado.nome}}
+           </span> 
+        </p-header>
+        Sexo: {{resultado.sexo}} <br>
+        Idade: {{resultado.idade}} <br>
+        Etnia: {{resultado.etnia}} <br>
+        Beleza: {{resultado.beleza}} <br>
+        Gordo: {{resultado.gordo}} <br>
+        Orientação Sexual: {{resultado.orientacaoSexual}} <br>
+        Extrato Social: {{resultado.extratoSocial}} <br>
+        Gosta de Ler: {{resultado.gostaDeLer}} <br>
+        Bom Aluno: {{resultado.bomAluno}} <br>
+        Esportista: {{resultado.esportista}} <br>
+        Crença: {{resultado.crenca}} <br>
+        <p-footer>
+            
+        </p-footer>
+    </p-card>
+</div>
