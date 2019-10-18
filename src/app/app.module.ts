@@ -1,3 +1,4 @@
+import { DataMomentoPipe } from './pipes/data-momento.pipe';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {ButtonModule} from 'primeng/button';
@@ -7,10 +8,12 @@ import { SimuladorComponent } from './simulador/simulador.component';
 import {TooltipModule} from 'primeng/tooltip';
 import {CardModule} from 'primeng/card';
 
+
 @NgModule({
   declarations: [
     AppComponent,
-    SimuladorComponent
+    SimuladorComponent,
+    DataMomentoPipe
   ],
   imports: [
     BrowserModule,

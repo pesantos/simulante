@@ -10,7 +10,8 @@
            </span> 
         </p-header>
         Sexo: {{resultado.sexo}} <br>
-        Idade: {{resultado.idade}} <br>
+        Idade Inicial: {{resultado.idade}} <br>
+        Idade Final: {{resultado.idadeAtual}} <br>
         Etnia: {{resultado.etnia}} <br>
         Beleza: {{resultado.beleza}} <br>
         Gordo: {{resultado.gordo}} <br>
@@ -20,8 +21,25 @@
         Bom Aluno: {{resultado.bomAluno}} <br>
         Esportista: {{resultado.esportista}} <br>
         Crença: {{resultado.crenca}} <br>
+        Ano:{{resultado.ano | dataMomento}}
         <p-footer>
             
         </p-footer>
     </p-card>
+
+    <div *ngFor="let ev of resultado.eventos">
+        <p-card>
+            <p-header>
+               <span class="nome">
+                {{ev.ano}}
+               </span> 
+            </p-header>
+           {{ev.motivo}}
+            <p-footer>
+                
+            </p-footer>
+        </p-card>
+    </div>
 </div>
+
+
